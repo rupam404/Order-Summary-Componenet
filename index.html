@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<style>
+.main{
+    height: 92vh;
+    width: 80%;
+    background-image: url("images-20220716T073204Z-001/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: rgb(226, 237, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: antiquewhite;
+}
+.order-card{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border: none;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+   
+}
+.image{
+    border: none;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+.section{
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+h1{
+    font-size: 18px;
+    margin-top: 20px;
+    color:rgba(3, 0, 44, 0.849)
+}
+.para{
+    text-align: center;
+    font-size: 12px;
+    color: grey;
+    margin-top: -5px;
+
+}
+.plan{
+    height:50px;
+    width:250px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5%;
+}
+.round{
+    background-color: rgb(215, 231, 250);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    height:25px;
+    width:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: grey;
+}
+.proceed{
+    margin-top: 10px;
+    width: 80%;
+    padding: 7px;
+    background-color: rgb(47, 0, 255);
+    color: white;
+    font:10px;
+    border: none;
+    border-radius: 4%;
+}
+.cancel{
+    margin-top: 5px;
+    width: 80%;
+    padding: 7px;
+    border: none;
+    border-radius: 4%;
+    color: gray;
+}
+.cancel:hover{
+    color: black;
+    background-color: rgb(221, 218, 218);
+}
+.rupees{
+    text-align: center;
+    font-size: 12px;
+    color: grey;
+}
+@media screen and (max-width: 600px) {
+  .main{
+       
+        width:380px;
+  }
+}
+  
+   
+
+.proceed:hover{
+    opacity: 75%;
+    
+}
+
+span{
+    color: rgb(20, 0, 56);
+}
+.Change{
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 12px;
+}
+a:hover{
+    text-decoration: none;
+}
+</style>
+
+<head>  
+    <script src="https://kit.fontawesome.com/da084d249e.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div class="main">
+        <div class="order-card">
+          
+            <img class="image"src="/images-20220716T073204Z-001/images/illustration-hero.svg" height="150px" width="300px">
+            <section class="section"><h1><b>Order Summary</b></h1>
+                <p class="para">You can listen to millions of songs,</br>audiobooks and podcasts in any device </br>any where you like!</p>
+            <div class="plan">
+               <div class="round">
+                <i class="fa-solid fa-music"></i>
+               </div>
+               <div class="rupees"><span><b>Annual Plan</b></span> </br>$365/Year</div>
+               <div class="Change"><a  href="#"><b>Change</b></a></div>
+            </div>
+            <button class="proceed"><b>Proceed to payment</b></button>
+            <button class="cancel"><b>Cancel Order</b></button>
+            </section>
+           
+        </div>
+
+    </div>
+</body>
+</html>
